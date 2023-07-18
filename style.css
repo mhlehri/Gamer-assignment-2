@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+/* Common CSS styles */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.primary-text {
+  color: #ff42a5;
+}
+.primary-text-gradiant {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  color: #534c64;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: #3c354f;
+}
+li {
+  list-style: none;
+}
+.btn-primary {
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+.text-center {
+  text-align: center;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0b0223;
+  line-height: 60px;
+}
+
+/* Navbar CSS here */
+nav {
+  background: #fff;
+  height: 130px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbar-brand {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.follow-us-on {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-img {
+  width: 20px;
+}
+
+/* banner section CSS here */
+.banner-section {
+  background: url("images/Group\ 14.png");
+  background-size: 45vw 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-left-content li {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 0;
+}
+.banner-heading {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-title {
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.btn-banner {
+  margin-top: 30px;
+}
+.btn-blue {
+  background: #4ec5f7;
+  margin-left: 10px;
+}
+.banner-img {
+  margin-top: 17px;
+}
+
+/* we are gamer section CSS here */
+.we-are-gamer-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.we-gamer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+.we-gamer-content {
+  text-align: right;
+}
+.we-gamer-content h4 {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-top: 24px;
+}
+.we-gamer-content h2 {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.we-gamer-description {
+  margin-top: 20px;
+}
+
+/* online games section CSS here */
+.online-game-section {
+  padding: 120px 0;
+}
+.online-game-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.online-game-description {
+  margin-top: 16px;
+}
+.card {
+  width: 342px;
+}
+.card-description {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* play instantly section CSS here */
+.play-intantly-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 250px;
+  margin-bottom: 200px;
+}
+.play-left-content {
+  text-align: right;
+}
+.play-description {
+  width: 353px;
+  margin-top: 24px;
+}
+.play-right-content {
+  position: relative;
+}
+.relative-img-1 {
+  position: absolute;
+  left: -140px;
+  top: 360px;
+}
+
+/* play games section CSS here */
+.play-games-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.play-games-description {
+  width: 483px;
+  margin-top: 24px;
+}
+.play-games-right-content {
+  position: relative;
+}
+.relative-img-2 {
+  position: absolute;
+  right: -140px;
+  top: 405px;
+}
+
+/* responsive part CSS here */
+
+/* CSS for Mobile devices */
+@media screen and (max-width: 425px) {
+  * {
+    margin: 0;
+  }
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  nav {
+    height: auto;
+  }
+  .navbar-brand {
+    margin-bottom: 20px;
+  }
+  .nav-container,
+  .we-gamer-container,
+  .online-game-container,
+  .play-intantly-container,
+  .play-games-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .nav-container {
+    padding: 20px 0;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .banner-section {
+    background: white;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-container img {
+    width: 100%;
+  }
+  .banner-left-content {
+    background: url("images/Group\ 14.png");
+    background-size: contain;
+    padding: 40px 10px;
+  }
+  .we-are-gamer-section {
+    background: white;
+  }
+  .we-gamer-img img {
+    width: 100%;
+    margin-top: 170px;
+  }
+  .we-gamer-content {
+    text-align: center;
+  }
+  .online-game-section {
+    padding: 60px 0;
+  }
+  .card-description {
+    text-align: center;
+  }
+  .play-intantly-container,
+  .play-games-container {
+    gap: 30px;
+  }
+  .play-intantly-container .img2 {
+    width: 80%;
+    margin-left: 70px;
+  }
+  .play-left-content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .play-right-content {
+    position: relative;
+  }
+  .relative-img-1 {
+    position: absolute;
+    left: 0;
+    top: 185px;
+    width: 40%;
+  }
+  .play-games-section {
+    margin-top: 60px;
+  }
+  .play-games-container .img3 {
+    width: 80%;
+    margin-right: 70px;
+  }
+  .play-games-left-content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .play-games-right-content {
+    position: relative;
+  }
+  .relative-img-2 {
+    position: absolute;
+    right: 0;
+    top: 185px;
+    width: 40%;
+  }
+
+  .play-games-description {
+    width: 400px;
+    margin-top: 24px;
+  }
+}
+
+/* CSS for Tablet devices */
