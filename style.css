@@ -43,6 +43,7 @@ li {
   text-transform: uppercase;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .text-center {
   text-align: center;
@@ -230,6 +231,46 @@ nav {
   position: absolute;
   right: -140px;
   top: 405px;
+}
+
+/* games capsule CSS here */
+.game-capsule-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  height: 427px;
+}
+.game-capsule-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.img-capsule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.img-capsule p {
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
+}
+.img-capsule:hover {
+  border: 1px solid #ff42a5;
+}
+.img-capsule:hover p {
+  color: #ff42a5;
 }
 
 /* responsive part CSS here */
