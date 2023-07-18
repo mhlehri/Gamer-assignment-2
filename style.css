@@ -370,6 +370,7 @@ nav {
   }
   .play-games-right-content {
     position: relative;
+    margin-bottom: 150px;
   }
   .relative-img-2 {
     position: absolute;
@@ -381,6 +382,10 @@ nav {
   .play-games-description {
     width: 400px;
     margin-top: 24px;
+  }
+  .game-capsule-section {
+    background: white;
+    height: auto;
   }
 }
 
