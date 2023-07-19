@@ -165,6 +165,7 @@ nav a {
   align-items: center;
   height: 600px;
 }
+
 .we-gamer-content {
   text-align: right;
 }
@@ -204,10 +205,46 @@ nav a {
 .card {
   width: 342px;
 }
+.card-img {
+  position: relative;
+}
+.card-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.card-img:hover::after {
+  opacity: 1;
+}
 .card-description {
   font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
+}
+.watch-play {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  color: white;
+  opacity: 0;
+  transition: 0.4s;
+}
+.card-img:hover .watch-play {
+  opacity: 1;
+  z-index: 1;
+}
+.watch-now {
+  color: #ff42a5;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* play instantly section CSS here */
@@ -354,7 +391,7 @@ footer p {
   }
   .container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: auto;
   }
   nav {
     height: auto;
@@ -366,7 +403,8 @@ footer p {
   .we-gamer-container,
   .online-game-container,
   .play-intantly-container,
-  .play-games-container {
+  .play-games-container,
+  .navbar-menu {
     flex-direction: column;
     height: auto;
   }
@@ -374,11 +412,12 @@ footer p {
     padding: 20px 0;
   }
   .navbar-menu {
-    flex-direction: column;
     gap: 30px;
   }
-  .banner-section {
+  .banner-section,
+  .we-are-gamer-section {
     background: white;
+    height: auto;
   }
   .banner-container {
     flex-direction: column-reverse;
@@ -392,21 +431,15 @@ footer p {
     background-size: contain;
     padding: 40px 10px;
   }
-  .we-are-gamer-section {
-    background: white;
-  }
   .we-gamer-img img {
     width: 100%;
-    margin-top: 170px;
   }
-  .we-gamer-content {
+  .we-gamer-content,
+  .card-description {
     text-align: center;
   }
   .online-game-section {
     padding: 60px 0;
-  }
-  .card-description {
-    text-align: center;
   }
   .play-intantly-container,
   .play-games-container {
@@ -452,7 +485,7 @@ footer p {
   }
 
   .play-games-description {
-    width: 400px;
+    width: 380px;
     margin-top: 24px;
   }
   .game-capsule-section {
@@ -489,3 +522,126 @@ footer p {
 }
 
 /* CSS for Tablet devices */
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+  }
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  nav {
+    height: auto;
+  }
+  .navbar-brand {
+    margin-bottom: 20px;
+  }
+  .nav-container,
+  .we-gamer-container,
+  .play-intantly-container,
+  .play-games-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .nav-container {
+    padding: 20px 0;
+  }
+  .banner-section {
+    background: white;
+    height: auto;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-container img {
+    width: 100%;
+  }
+  .banner-left-content {
+    background: url("images/Group\ 14.png");
+    background-size: contain;
+    padding: 50px 125px;
+  }
+  .we-are-gamer-section {
+    background: white;
+  }
+  .we-gamer-img img {
+    width: 100%;
+  }
+  .we-gamer-content {
+    text-align: center;
+  }
+  .online-game-section {
+    padding: 60px 0;
+  }
+  .online-game-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .play-intantly-container,
+  .play-games-container {
+    gap: 30px;
+  }
+  .play-intantly-container .img2 {
+    width: 80%;
+    margin-left: 100px;
+  }
+  .play-left-content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .play-right-content {
+    position: relative;
+  }
+  .relative-img-1 {
+    position: absolute;
+    left: -25px;
+    top: 315px;
+    width: 40%;
+  }
+  .play-games-section {
+    margin-top: 150px;
+  }
+  .play-games-container .img3 {
+    width: 80%;
+    margin-right: 70px;
+  }
+  .play-games-left-content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .play-games-right-content {
+    position: relative;
+    margin-bottom: 150px;
+  }
+  .relative-img-2 {
+    position: absolute;
+    right: 0;
+    top: 300px;
+    width: 40%;
+  }
+  .play-games-description {
+    width: 500px;
+    margin-top: 24px;
+  }
+  .img-capsule {
+    gap: 5px;
+    padding: 6px;
+  }
+  .img-capsule img {
+    width: 40px;
+  }
+  .img-capsule p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .footer-nav {
+    gap: 30px;
+  }
+
+  footer p {
+    padding-bottom: 60px;
+  }
+}
