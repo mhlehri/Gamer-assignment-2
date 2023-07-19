@@ -28,10 +28,12 @@ p {
 }
 a {
   text-decoration: none;
-  color: #3c354f;
 }
 li {
   list-style: none;
+}
+.text-wh {
+  color: white;
 }
 .btn-primary {
   padding: 21px 40px;
@@ -54,11 +56,31 @@ li {
   color: #0b0223;
   line-height: 60px;
 }
+.footer-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
 
 /* Navbar CSS here */
 nav {
   background: #fff;
   height: 130px;
+}
+nav a {
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-i i {
+  color: #f948b2;
+  margin-right: 5px;
+}
+.nav-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #0b0223;
+  line-height: 60px;
 }
 .nav-container {
   display: flex;
@@ -273,6 +295,56 @@ nav {
   color: #ff42a5;
 }
 
+/* footer section CSS here */
+footer {
+  background: #0b0223;
+}
+.footer-brand {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 60px;
+}
+.footer-nav a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 75px;
+}
+.footer-social-links a {
+  color: white;
+  font-size: 40px;
+}
+.privacy-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 25px;
+}
+.privacy-links a {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+footer p {
+  padding-bottom: 120px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+}
+
 /* responsive part CSS here */
 
 /* CSS for Mobile devices */
@@ -386,6 +458,33 @@ nav {
   .game-capsule-section {
     background: white;
     height: auto;
+    margin-bottom: 40px;
+  }
+  .img-capsule {
+    gap: 5px;
+    padding: 6px;
+  }
+  .img-capsule img {
+    width: 25px;
+  }
+  .img-capsule p {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+  }
+  .footer-social-links {
+    max-width: 250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .privacy-links {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  footer p {
+    padding-bottom: 60px;
   }
 }
 
